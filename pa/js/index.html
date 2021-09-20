@@ -1,0 +1,25 @@
+<html>
+<head>
+</head>
+<body>
+<p><button onclick="pierwsza();">1</button></p>
+<p><button onclick="druga();">2</button></p>
+<p><button onclick="trzecia();">3</button></p>
+<script>
+function pierwsza(){
+alert("Pierwsze okno dialogowe");
+}
+function druga(){
+confirm("Drugie okno dialogowe");
+}
+function trzecia(){
+const cos = prompt("Podaj jakas wartosc");
+if(cos){
+alert("Podales jakas wartosc");
+}else{
+alert("anulowales lub nic nie wpisales");
+}
+}
+</script>
+</body>
+</html>

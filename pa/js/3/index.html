@@ -1,0 +1,38 @@
+<!-- skrypt pobierajacy od uzytkownika informację na temat jego wzrostu, na podstawie wprowadzonych danych wypisz odpowiedni komunikat
+niski: <150cm, średni 150-180cm a wysoki >180cm
+ -->
+ <html>
+ <head></head>
+ <body>
+ <input type="text" id="wzrost"><button onclick="submit()">Kliknij</button>
+ <div id="response"></div>
+ 
+ <script>
+ function submit(){
+ var v = document.getElementById("wzrost").value;
+ var r = document.getElementById("response");
+ if(v){
+	if(isNaN(v)){
+		r.innerText = "Podana wartość nie jest liczbą!";
+		return;
+	}
+	if(v < 150){
+		r.innerText = "Wzrost: niski";
+		return;
+	}
+	if(v < 180 && v > 150){
+		r.innerText = "Wzrost: średni";
+		return;
+	}
+	if(v > 180){
+		r.innerText = "Wzrost: wysoki";
+		return;
+	}
+ }else{
+	r.innerText = "Podaj jakas wartosc";
+	return;
+ }
+ }
+ </script>
+ </body>
+ </html>

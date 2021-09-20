@@ -1,0 +1,55 @@
+<!--Skrypt który wypisze 3 liczby wprowadzone przez użytkownika w kolejności malejącej-->
+<html>
+<head>
+</head>
+<body>
+<button onclick="sort();">Kliknij mnie</button><br>
+<div id="liczby"><br>
+<button onclick="test();">Klik</button>
+</div>
+<script>
+function sort(){
+var l1 = prompt("Wprowadz pierwszą liczbe:");
+if(isNaN(l1)){
+alert("To nie liczba");
+return;
+}
+if(l1){
+var l2 = prompt("Wprowadz drugą liczbe:");
+if(isNaN(l2)){
+alert("To nie liczba");
+return;
+}
+if(l2){
+var l3 = prompt("Wprowadz trzecią liczbe:");
+if(isNaN(l3)){
+alert("To nie liczba");
+return;
+}
+}
+var liczby = new Array(l1, l2, l3);
+var div = document.getElementById("liczby");
+var s = liczby.sort(function(a,b){return b-a});
+div.innerText = s;
+}
+}
+
+
+//
+function test(){
+var x = prompt("1 liczba");
+if(x){
+	var y = prompt("2 liczba");
+	if(y){
+		var z = prompt("3 liczba");
+		if(z){
+			var liczby = [x, y, z];
+			var sort = liczby.sort(function(a,b){return b-a});
+			alert(sort);
+		}
+	}
+}
+}
+</script>
+</body>
+</html>
