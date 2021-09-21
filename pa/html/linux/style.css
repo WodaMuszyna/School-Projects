@@ -1,0 +1,23 @@
+body{
+    background-color: blanchedalmond;
+}
+marquee{
+    font-size: 40px;
+    font-weight: bold;
+}
+#linki {
+    font-size: 18px;
+    text-align: center;
+}
+#tekst{
+    text-align: center;
+    font-size: 17px;
+}
+#nazwa{
+    font-size: 22px;
+    text-align: center;
+}
+img{
+    width: 300px;
+    height: 300px;
+}
