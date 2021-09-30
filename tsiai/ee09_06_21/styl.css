@@ -1,0 +1,54 @@
+body{
+    font-family: Georgia;
+}
+#banner{
+    background-color: #005B4F;
+    color: white;
+    text-align: center;
+    font-size: 50%;
+    height: 20px;
+}
+#main{
+    background-color: #E1E2E1;
+    height: 400px;
+    padding: 20px;
+    overflow-y: scroll;
+}
+#zdjecie{
+    width: 20%;
+    float: left;
+    clear: left;
+}
+#opis{
+    width: 60%;
+    float: left;
+    margin-top: 0%; 
+    margin-left: -8%;
+}
+#linia{
+    clear: left;
+}
+#left-footer,#right-footer{
+    background-color: #005B4F;
+    color: white;
+    text-align: center;
+    width: 50%;
+    height: 20px;
+}
+#left-footer{
+    float: left;
+}
+#right-footer{
+    float: right;
+}
+img{
+    padding: 20px;
+    border-radius: 50%;
+}
+h2{
+    text-align: center;
+    background: #00897B;
+}
+a{
+    color: white;
+}

@@ -1,0 +1,4 @@
+select imie,nazwisko,opis,zdjecie from osoby where Hobby_id in (1,2,6);
+select o.id,o.nazwisko,h.nazwa from osoby o left join hobby h on o.Hobby_id=h.id where rok_urodzenia > 2000;
+select id,zdjecie from osoby where imie like 'Monika' limit 5;
+create table wpisy (id integer primary key not null auto_increment, wpis text, uzytkownik_id integer not null);
