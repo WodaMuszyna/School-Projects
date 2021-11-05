@@ -1,0 +1,54 @@
+#banner{
+    background-color: #B284BE;
+    height: 60px;
+    font-size: 120%;
+    text-align: center;
+}
+
+#lewy{
+    background-color: #BCE27F;
+    height: 600px;
+    width: 25%;
+    font-size: 120%;
+    float: left;
+}
+
+#srodkowy{
+    background-color: #BCE27F;
+    height: 600px;
+    width: 50%;
+    text-align: center;
+    float: left;
+}
+
+#prawy{
+    background-color: #BCE27F;
+    height: 600px;
+    width: 25%;
+    font-size: 120%;
+    text-align: center;
+    float: right;
+}
+
+#stopka{
+    background-color: #B284BE;
+    height: 60px;
+    text-align: left;
+    padding: 5px;
+    clear: left;
+}
+
+li{
+    padding-top: 20px;
+    background-color: #B284BE;
+    list-style-position: inside;
+}
+
+
+img, h2{
+    margin-top: 50px;
+}
+
+form{
+    margin-bottom: 100px;
+}

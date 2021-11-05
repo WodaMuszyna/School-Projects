@@ -1,0 +1,4 @@
+select nazwa from towary where promocja=1;
+select cena from towary where nazwa="cienkopis";
+select d.nazwa, count(t.idDostawcy) as ilosc from dostawcy d left join towary t on d.id = t.idDostawcy group by d.id;
+alter table dostawcy add column e_mail text;
